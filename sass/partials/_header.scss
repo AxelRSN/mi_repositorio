@@ -1,25 +1,47 @@
 
-.menu_item a {
-    display: block;
-    text-decoration: none;
-    padding: 1rem 1.2rem;
-    color: #2b2b2b;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.2rem;
-    transition: color 3s;
+.menu_item {
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 1rem 1.2rem;
+        color: #2b2b2b;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.2rem;
+        transition: color 3s;
+    }
+        &:hover{
+            text-decoration: underline;
+            background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+            color: #ffffff;
+        }
+        &:visited{
+            color: #6060e0;
+        }
+        &:active{
+            color: #920909;
+        }
+}       
+
+/*  Overwrite Bootstrap*/
+
+#fontnav{
+    font-size: 1.5rem;
 }
-.menu_item a:hover {
-    text-decoration: underline;
-    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: #ffffff;
+.navbar-expand-md {
+    .navbar-collapse {
+        justify-content: flex-end;
+        gap: 1rem;
+            .navbar-nav{
+                gap: 2rem;
+                padding: 1rem;
+            }
+    }
+    .navbar-brand{
+        max-width: 50px;
+    }
 }
-.menu_item a:visited{
-    color: #6060e0;
-} 
-.menu_item a:active{
-    color: #920909;
-}
+
 .nav{
     display: flex;
     padding: 1rem 0;
@@ -43,20 +65,3 @@
     padding-left: 0px;
 }
 
-/*  Overwrite Bootstrap*/
-
-#fontnav{
-    font-size: 1.5rem;
-}
-.navbar-expand-md .navbar-collapse {
-    justify-content: flex-end;
-    gap: 1rem;
-}
-.navbar-expand-md .navbar-nav{
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.navbar-brand{
-    max-width: 50px;
-}
