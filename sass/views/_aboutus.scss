@@ -1,0 +1,14 @@
+.flex_aboutus{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+.grid_gallery_aboutus{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+    gap: 2rem;
+}

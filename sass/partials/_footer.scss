@@ -1,0 +1,20 @@
+
+footer {
+    padding: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-basis: 60%;
+    gap: 2rem;
+}
+footer .logo{
+    max-width: 70px;
+    flex-basis: 40%;
+}
+footer .menu_fot{
+    display: flex;
+    padding-left: 1rem;
+    gap: 2rem;
+}
