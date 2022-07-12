@@ -6,10 +6,10 @@
     $text-color: #2B2B2B;
 
     $colors:(
-        primary: #140c49,
-        secondary: #fffcfc,
-        alternative: #000000,
-        text-color: #2B2B2B
+        primary: #000000,
+        secondary: #4053e5a2,
+        alternative: #0b24ae,
+        text-color: #ffffff
     );
     @each $key, $val in $colors{
         .#{$key} {

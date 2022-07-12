@@ -1,16 +1,16 @@
 /*  MISC  */
 /*  COLORS  */
 .primary {
-  color: #140c49; }
-
-.secondary {
-  color: #fffcfc; }
-
-.alternative {
   color: #000000; }
 
+.secondary {
+  color: #4053e5a2; }
+
+.alternative {
+  color: #0b24ae; }
+
 .text-color {
-  color: #2B2B2B; }
+  color: #ffffff; }
 
 /*  SPACING  */
 .spacing-lg {
