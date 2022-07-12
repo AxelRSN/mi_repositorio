@@ -5,15 +5,49 @@
     $alternative: #000000;
     $text-color: #2B2B2B;
 
+    $colors:(
+        primary: #140c49,
+        secondary: #fffcfc,
+        alternative: #000000,
+        text-color: #2B2B2B
+    );
+    @each $key, $val in $colors{
+        .#{$key} {
+            color: #{$val};
+        }
+    }
+
     /*  SPACING  */
     $spacing-lg: 6rem;
     $spacing-md: 2.4rem;
     $spacing-sm: 2rem;
-    $spacing-xsm: 1rem;
+    $spacing-xsm: 1.5rem;
+
+    $spacings:(
+        spacing-lg: 6rem,
+        spacing-md: 2.4rem,
+        spacing-sm: 2rem,
+        spacing-xsm: 1.5rem
+    );
+    @each $key, $val in $spacings{
+        .#{$key}{
+            padding: $val;
+        }
+    }
 
     /*  FONT-FAMILY  */
     $font-principal: 'Roboto', sans-serif;
     $font-title: 'Merriweather', serif;
+
+    // $fonts:(
+    //     font-principal: 'Roboto', sans-serif,
+    //     font-title: 'Merriweather', serif
+    // );
+    // @each $key, $val in $fonts{
+    //     .#{$key}{
+    //         font-family: $val;
+    //     }
+    // }
 
     /*  FONT-SIZE  */
     $text-lg: 5.2em;

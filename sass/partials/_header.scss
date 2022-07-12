@@ -31,10 +31,10 @@
 .navbar-expand-md {
     .navbar-collapse {
         justify-content: flex-end;
-        gap: 1rem;
+        gap: map-get($spacings, spacing-xsm);
             .navbar-nav{
-                gap: 2rem;
-                padding: 1rem;
+                gap: map-get($spacings, spacing-md);
+                padding: map-get($spacings, spacing-xsm);
             }
     }
     .navbar-brand{
@@ -43,11 +43,12 @@
 }
 
 .nav{
-    display: flex;
-    padding: 1rem 0;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between, center, map-get($spacings, spacing-xsm));
+    // display: flex;
+    // padding: 1rem 0;
+    // flex-flow: row nowrap;
+    // justify-content: space-between;
+    // align-items: center;
     margin: 0 auto;
     flex-basis: 60%;
 }
@@ -61,7 +62,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: map-get($spacings, spacing-xsm);
     padding-left: 0px;
 }
 
