@@ -195,14 +195,12 @@ footer .menu_fot{
 
 .parallax {
     background-image: url(../img/img1.jpg);
-    height: auto;
+    height:100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-wrap: break-word;
-    padding: 50px 30px;
-    margin-bottom: 50px;
 }
 .parallax h3{
     font-size: 3rem;

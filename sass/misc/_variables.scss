@@ -3,12 +3,18 @@
     $primary: #140c49;
     $secondary: #fffcfc;
     $alternative: #000000;
-    $text-color: #2B2B2B;
+    $text-color: #ffffff;
 
     $colors:(
+<<<<<<< HEAD
         primary: #000000,
         secondary: #4053e5a2,
         alternative: #0b24ae,
+=======
+        primary: #140c49,
+        secondary: #fffcfc,
+        alternative: #000000,
+>>>>>>> f8eb11fe4ddbd1874426db504911193be7a9cb72
         text-color: #ffffff
     );
     @each $key, $val in $colors{
