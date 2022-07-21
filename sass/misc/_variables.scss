@@ -3,13 +3,13 @@
     $primary: #140c49;
     $secondary: #fffcfc;
     $alternative: #000000;
-    $text-color: #2B2B2B;
+    $text-color: #ffffff;
 
     $colors:(
         primary: #140c49,
         secondary: #fffcfc,
         alternative: #000000,
-        text-color: #2B2B2B
+        text-color: #ffffff
     );
     @each $key, $val in $colors{
         .#{$key} {

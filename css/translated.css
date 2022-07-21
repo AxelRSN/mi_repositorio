@@ -10,7 +10,7 @@
   color: #000000; }
 
 .text-color {
-  color: #2B2B2B; }
+  color: #ffffff; }
 
 /*  SPACING  */
 .spacing-lg {
@@ -69,7 +69,7 @@ a {
   display: block;
   text-decoration: none;
   padding: 1rem 1.2rem;
-  color: #2b2b2b;
+  color: #af030300;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 2.2rem;
@@ -92,13 +92,14 @@ a {
 
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
-  gap: 1.5rem; }
+  gap: 2rem; }
   .navbar-expand-md .navbar-collapse .navbar-nav {
     gap: 2.4rem;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    align-items: center; }
 
 .navbar-expand-md .navbar-brand {
-  max-width: 50px; }
+  max-width: 100px; }
 
 .nav {
   display: flex;
@@ -109,17 +110,19 @@ a {
   margin: 0 auto;
   flex-basis: 60%; }
 
-/* #nav-bar {
-    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    color: #ffffff;
-    /* position: sticky;
-    top: 0px; */
 .menu {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   gap: 1.5rem;
   padding-left: 0px; }
+
+.navbar .navbar-nav .nav-item .a {
+  color: #ffffff; }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  box-shadow: 0px 0 10px -2px white;
+  border-radius: 5px; }
 
 footer {
   padding: 2rem 0;
@@ -141,8 +144,30 @@ footer {
 /*  VIEWS  */
 /*  HOME  */
 .container_index {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto; }
+
+/* Parallasx */
+.parallax, .flex_parrafo_index {
+  background-image: url(../img/img1.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-wrap: break-word; }
+  .parallax h3, .flex_parrafo_index h3 {
+    font-size: 3rem;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 50px; }
+  .parallax p, .flex_parrafo_index p {
+    font-size: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    text-transform: capitalize;
+    padding: 20px; }
 
 /*  Grid  */
 .grid_index_head {
@@ -184,30 +209,6 @@ footer {
     color: #d1e3dec1; }
     .grid_index_head .head_lateral_der h2 {
       transform: translate(0, 150px); }
-
-/* Parallasx */
-.parallax, .flex_parrafo_index {
-  background-image: url(../img/img1.jpg);
-  height: auto;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-wrap: break-word;
-  padding: 50px 30px;
-  margin-bottom: 50px; }
-  .parallax h3, .flex_parrafo_index h3 {
-    font-size: 3rem;
-    text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
-    margin-top: 50px; }
-  .parallax p, .flex_parrafo_index p {
-    font-size: 2rem;
-    text-align: center;
-    background-color: #ffffff;
-    text-transform: capitalize;
-    padding: 20px; }
 
 .flex_parrafo_index {
   display: flex;
