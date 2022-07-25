@@ -5,8 +5,18 @@
     margin: 0 auto;
     margin-top: 2rem;
 
+    .background_aboutus1{
+        background-image: url(../img/layered-waves-haikei_baja.svg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: inherit;
+    }
+
         .title_aboutus{
             max-width: 100%;
+        
                 h2{
                     font-size: map-get($text-size , text-xlg );
                     color: map-get($colors , text-color );
@@ -51,7 +61,7 @@
                     grid-column: 2 / 3;
                 }
         }
-        .background_aboutus{
+        .background_aboutus2{
             background-image: url(../img/layered-waves-haikei.svg);
             height: 100vh;
             background-repeat: no-repeat;
@@ -62,14 +72,27 @@
         .flex_cards_aboutus{
             display: flex;
             align-items: center;
+            padding: 0 10px;
+            padding: 0px 60px;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
 
                 .card_aboutus{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    align-items: center;
+                    max-width: fit-content;
+                    gap: 20px;
+                    padding: 20px;
+
+                        img{
+                            max-width: 50%;
+                        }
 
                         p{
-                            font-size: map-get($text-size , text-md );
+                            font-size: 2vw;
                         }
                 }
         }
