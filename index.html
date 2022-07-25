@@ -12,43 +12,83 @@
         <link rel="stylesheet" href="./css/translated.css">  
     </head>
     <body>
-        <section class="parallax">
-            <nav id="fontnav" class="navbar navbar-expand-md fontnav">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                          <img src="./img/logosinfondo.png" alt="" class="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse navbar-dark ms-auto" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                 <a class="nav-link" href="./views/service.html">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/signin.html">Sign in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/aboutus.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav id="fontnav" class="navbar navbar-expand-md fixed-top fontnav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                      <img src="./img/logosinfondo.png" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-dark ms-auto"id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="./views/servicehtml">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/signinhtml">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/aboutushtml">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contacthtml">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav> 
+            </div>
+        </nav> 
+        <section class="parallax">
+            <div class="caption">
+                <span class="border">Nunca te fallaremos</span>
+                <a class="btn btn-primary" href="./views/contact.html" role="button">Contactanos</a>
+            </div>
         </section>
         <main class="container_index">
-            <!-- <section id="parrafo1" class="parallax flex_parrafo_index">
-                <h2>Servicios</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maiores perspiciatis modi repudiandae, nihil consequatur accusantium provident cupiditate quo. Enim id corporis tempore dicta itaque perspiciatis laborum harum numquam deserunt?</p>
-            </section> -->
-            <section class="grid_index_head">
+            <h2>Despacho contable</h2>
+            < class="d-flex padding_container_flex">
+                <div>
+                    <p class="text_decoration_home_text1">Nos encargamos de tus impuestos y de ponerte en orden en el SAT.</p>
+                    <p class="text_decoration_home_text2">Olvídate del fantasma del SAT, te asignaremos un contador para que lo haga todo por ti y solo te dediques a hacer lo que te gusta.</p>
+                </div>
+                <div class="forma">
+                    <form action="" method="GET" class="form"> 
+                        <div class="form_user_home">
+                            <label for="usuario" class="form-user form-box">Nombre Completo</label>
+                            <input type="text" name="usuario">
+                        </div>
+                        <div class="form_email_home">
+                            <label for="email" class="form-email form-box">Correo Electronico</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="form_phone_home">
+                            <label for="phone" class="form-phone form-box">Numero Telefonico</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="bttn_form_enviar_home">
+                            <input type="submit" value="Enviar formulario" class="btn--submit">
+                        </div>
+                    </form> 
+                </div>
+        </main>
+        <footer>
+            <ul class="menu_fot">
+                <li class="menu_item">
+                     <a href="./aboutus.html">About Us</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+                <img class="logo" src="./img/logosinfondo.png" alt="logo sitio">
+        </footer> 
+        <script src="./js/bootstrap.min.js"></script> 
+    </body>
+</html>
+<!-- <section class="grid_index_head">
                 <div class="head_lateral_izq">
                     <h2>"Nunca dejes lo que puede hacer hoy para mañana"</h2>
                 </div>
@@ -92,22 +132,7 @@
             <section class="index_imgbaj">
                 <img src="./img/img2.jpg" alt="" class="img2">
             </section>
-        </main>
-        <footer>
-            <ul class="menu_fot">
-                <li class="menu_item">
-                     <a href="./aboutus.html">About Us</a>
-                </li>
-                <li class="menu_item">
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
-                <img class="logo" src="./img/logo 1.svg" alt="logo sitio">
-        </footer> 
-        <script src="./js/bootstrap.min.js"></script> 
-    </body>
-</html>
-
+        </main> -->
         <!-- <header id="nav-bar" class="header">  
             <nav class="nav">
                 <picture>
@@ -159,3 +184,14 @@
     </table>
     <br>
 </section> -->
+<!-- <label for="check" class="form-check">¿Desea recibir el Newsletter?</label>
+                        <input type="checkbox" name="check">
+                        <br>
+                        <textarea name="comentario" class="form-comment" cols="30" rows="10" placeholder="Comentarios"></textarea>
+                        <br>
+                        <input type="reset" value="Limpiar formulario" class="btn--reset">
+                        <input type="submit" value="Enviar formulario" class="btn--submit">
+                        <select name="estadocivil" class="form-state form-box">
+                            <option value="soltero">Soltero</option>
+                         <option value="casado">Casado</option>
+                        </select> -->

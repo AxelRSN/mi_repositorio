@@ -24,6 +24,7 @@
     $spacing-xsm: 1.5rem;
 
     $spacings:(
+        spacing-xlg: 8rem,
         spacing-lg: 6rem,
         spacing-md: 2.4rem,
         spacing-sm: 2rem,
@@ -54,3 +55,16 @@
     $text-md: 2.2em;
     $text-sm: 1.6em;
     $text-xsm: 1.4em;
+
+    $text-size:(
+        text-xlg: 5.2em,
+        text-lg: 3em,
+        text-md: 2.2em,
+        text-sm: 1.6em,
+        text-xsm: 1.4em
+    );
+    @each $key, $val in $text-size{
+        .#{$key}{
+            font-size: $val;
+        }
+    }

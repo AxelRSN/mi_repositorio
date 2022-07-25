@@ -4,135 +4,170 @@
 .container_index{
     max-width: 1500px;
     margin: 0 auto;
+        h2{
+            text-align: center;
+            padding: map-get($spacings , spacing-lg);
+            font-size: map-get($text-size , text-xlg);
+            font-weight: 400;
+            color: map-get($colors , text-color);
+
+            @media screen and (max-width: 766px) { 
+                padding: map-get($spacings , spacing-md);
+                margin-top: 20px;
+            }
+        }
+        .padding_container_flex{
+            padding: map-get($spacings , spacing-lg);
+
+            @media screen and (max-width: 766px) { 
+                padding: map-get($spacings , spacing-md);
+            }
+        }
+                p.text_decoration_home_text1{
+                    font-size: map-get($text-size , text-xlg);
+                    padding: map-get($spacings , spacing-md);
+                    color: map-get($colors , text-color);
+
+                    @media screen and (max-width: 1200px) { 
+                        font-size: 4vw;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 900px) { 
+                        font-size: map-get($text-size , text-md);
+                    }
+                }
+                p.text_decoration_home_text2{
+                    font-size: map-get($text-size , text-lg);
+                    padding: map-get($spacings , spacing-md);
+                    color: map-get($colors , text-color);
+
+                    @media screen and (max-width: 1200px) { 
+                        font-size: 2vw;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 900px) { 
+                        font-size: map-get($text-size , text-sm);
+                    }
+                }
+        .forma{
+            padding: map-get($spacings , spacing-md);
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            position: relative;
+            text-align: center;
+            -webkit-box-shadow: 0px 0 20px -2px rgb(255, 255, 255); 
+            box-shadow: 0px 0 20px -2px rgb(255, 252, 252);
+            border-radius: 30px;
+
+                .form_user_home{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    margin-bottom: 1rem;
+                
+                        .form-user{
+                            margin-bottom: 0.5rem;
+                            font-size: map-get($text-size , text-sm);
+                            color: map-get($colors , text-color);
+                        }
+                }
+                .form_email_home{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    margin-bottom: 1rem;
+            
+                        .form-email{
+                            margin-bottom: 0.5rem;
+                            font-size: map-get($text-size , text-sm);
+                            color: map-get($colors , text-color);
+                        }
+                }         
+                .form_phone_home{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    margin-bottom: 1rem;
+                
+                        .form-phone{
+                            margin-bottom: 0.5rem;
+                            font-size: map-get($text-size , text-sm);
+                            color: map-get($colors , text-color);
+                        }
+                }        
+                .bttn_form_enviar_home{
+                    padding-right: 78%;
+
+                        .btn{
+                            width: auto;
+                            padding: 10px 12px;
+                            font-size: 12px;
+                            margin: 5px auto;
+                            border-radius: 10px;
+                        }
+            
+                        .btn--submit{
+                            @extend .btn;
+                            background-color: #ffffff;
+                            &:hover {
+                                -webkit-box-shadow: 0px 0 20px -2px rgb(255, 255, 255); 
+                                box-shadow: 0px 0 20px -2px rgb(255, 252, 252);
+                            }
+                        };
+                }
+            }            
 }
 
 /* Parallasx */
 .parallax {
-    background-image: url(../img/img1.jpg);
+    background-image: url(../img/img_parallax.jpg);
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-wrap: break-word;
-        h3{
-            font-size: 3rem;
-            text-align: center;
-            background-color: #ffffff;
-            padding: 20px;
-            margin-top: 50px;
-        }
-        p{
-            font-size: 2rem;
-            text-align: center;
-            background-color: #ffffff;
-            text-transform: capitalize;
-            padding: 20px;
-        }
-}
 
-/*  Grid  */
-.grid_index_head{
-    justify-content: center;
-    display: grid;
-    height: auto;
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    margin: 0 auto;
-    grid-template-columns: 10vw 1fr 10vw;
-    grid-template-rows: 20vh 30vh;
-        .head_lateral_izq{
-            grid-row: 1/3;
-            align-items: stretch;
-            justify-content: center;
-            background-color: #0d1630;
-            color: #d1e3dec1;
-                h2{
-                    transform: translate(0, 150px);
-                }
-        }
-        .head_medio_alto{
-            grid-column: 2/3;
-            align-items: stretch;
-        }
-        .head_medio_bajo{
-            grid-row: 2;
-            grid-column: 2/3;
-            align-items: stretch;
+    @media screen and (max-width: 450px) { 
+        background-image: url(../img/img1.jpg)
+    }
+        .caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            gap: 2rem;
+            left: 0;
+            top: 50%;
             width: 100%;
-            transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-                &:hover{
-                    transform: scale(1.2);
-                }
-                picture img{
-                    width: 100%;
-                    height: 100%;
-                }
+            text-align: center;
+            color: #000;
         }
-        .head_lateral_der{
-            grid-row: 1/3;
-            align-items: stretch;
-            background-color: #0d1630;
-            color: #d1e3dec1;
-                h2{
-                    transform: translate(0, 150px);
+                span.border {
+                    background-color: rgba(32, 31, 134, 0.315);
+                    color: #fff;
+                    padding: 18px;
+                    font-size: 25px;
+                    letter-spacing: 10px;
                 }
-        }
 }
 
-.flex_parrafo_index{
-    @extend .parallax;
-    display: flex;
-    flex-flow: column nowrap;
-}
-#contact-form{
-    width: 100%;
-    height: 100%;
-}
-.forma{
-    width: 100%;
-    height: 100%;
-    background-color: #6060e0;
-    position: relative;
-    text-align: center;
-}
-.index_imgbaj{
-    .img2{
-        display: flex;
-        margin: 0 auto;
-        max-width: 800px;
-        max-height: 800px;
-        padding: 30px;
-        animation-name: scale;
-        animation-duration: 2s;
-        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
-        animation-iteration-count: infinite;
-        animation-delay: 2s;
-    }
-}
 
-/*  FORM  */
-.btn{
-    width: auto;
-    padding: 10px 12px;
-    font-size: 12px;
-    margin: 5px auto;
-    border: none;
-}
-.btn--reset{
-    @extend .btn;
-    background-color: #fefefe;
-    &:hover {
-        background-color: #ff0000;
-    }
-};
-.btn--submit{
-    @extend .btn;
-    background-color: #ffffff;
-    &:hover {
-        background-color: #3dff03;
-    }
-};
 
-        
+/*  Bootstrap Overwrite  */
+
+
+.container_index{
+
+    .d-flex{
+        align-items: center;
+
+            @media screen and (max-width: 766px) { 
+                display: flex;
+                flex-wrap: wrap;
+            }
+    }
+}
