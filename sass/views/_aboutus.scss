@@ -1,14 +1,96 @@
-.flex_aboutus{
-    display: flex;
-    flex-flow: column nowrap;
+/*  About Us  */
+
+.container_aboutus{
+    max-width: 1500px;
     margin: 0 auto;
-    gap: 2rem;
-    max-width: 1200px;
+    margin-top: 2rem;
+
+        .title_aboutus{
+            max-width: 100%;
+                h2{
+                    font-size: map-get($text-size , text-xlg );
+                    color: map-get($colors , text-color );
+
+                    @media screen and (max-width: 1110px) { 
+                        font-size: 4.5em;
+                    }
+
+                    @media screen and (max-width: 977px) { 
+                        font-size: 9vw;
+                    }
+                }
+                p{
+                    font-size: map-get($text-size , text-lg );
+                    color: map-get($colors , text-color );
+                    margin: 20px 0;
+
+                    @media screen and (max-width: 1110px) { 
+                        font-size: 2.7em;
+                    }
+
+                    @media screen and (max-width: 977px) { 
+                        font-size: 2.5vw;
+                    }
+                }
+        }
+        .grid_title_aboutus{
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+
+                .h2{
+                    grid-row: 1 / 2;
+                    grid-column: 1 / 2;
+                }
+                .p{
+                    grid-row: 2 / 3;
+                    grid-column: 1 / 2;
+                }
+                .img{
+                    grid-row: 1 / 3;
+                    grid-column: 2 / 3;
+                }
+        }
+        .background_aboutus{
+            background-image: url(../img/layered-waves-haikei.svg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: inherit;
+        }
+        .flex_cards_aboutus{
+            display: flex;
+            align-items: center;
+
+                .card_aboutus{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                        p{
+                            font-size: map-get($text-size , text-md );
+                        }
+                }
+        }
 }
+
 
 .grid_gallery_aboutus{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 20px;
     gap: 2rem;
+}
+
+/*  Bootstrap Overwrite */
+
+.main_aboutus{
+
+    .d-flex{
+        flex-flow: column nowrap;
+        margin: 0 auto;
+        gap: 2rem;
+        max-width: 1200px;
+    }
 }

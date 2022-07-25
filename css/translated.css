@@ -170,7 +170,13 @@ footer {
 /*  HOME  */
 .container_index {
   max-width: 1500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-image: url(../img/stacked-waves-haikei.svg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: inherit; }
   .container_index h2 {
     text-align: center;
     padding: 6rem;
@@ -297,7 +303,7 @@ footer {
       display: flex;
       flex-wrap: wrap; } }
 
-.container {
+.container_service {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 2rem; }
@@ -387,18 +393,74 @@ footer {
 .box_text {
   font-family: 'Merriweather', serif; }
 
-.flex_aboutus {
-  display: flex;
-  flex-flow: column nowrap;
+/*  About Us  */
+.container_aboutus {
+  max-width: 1500px;
   margin: 0 auto;
-  gap: 2rem;
-  max-width: 1200px; }
+  margin-top: 2rem; }
+  .container_aboutus .title_aboutus {
+    max-width: 100%; }
+    .container_aboutus .title_aboutus h2 {
+      font-size: 5.2em;
+      color: #ffffff; }
+      @media screen and (max-width: 1110px) {
+        .container_aboutus .title_aboutus h2 {
+          font-size: 4.5em; } }
+      @media screen and (max-width: 977px) {
+        .container_aboutus .title_aboutus h2 {
+          font-size: 9vw; } }
+    .container_aboutus .title_aboutus p {
+      font-size: 3em;
+      color: #ffffff;
+      margin: 20px 0; }
+      @media screen and (max-width: 1110px) {
+        .container_aboutus .title_aboutus p {
+          font-size: 2.7em; } }
+      @media screen and (max-width: 977px) {
+        .container_aboutus .title_aboutus p {
+          font-size: 2.5vw; } }
+  .container_aboutus .grid_title_aboutus {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+    .container_aboutus .grid_title_aboutus .h2 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2; }
+    .container_aboutus .grid_title_aboutus .p {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2; }
+    .container_aboutus .grid_title_aboutus .img {
+      grid-row: 1 / 3;
+      grid-column: 2 / 3; }
+  .container_aboutus .background_aboutus {
+    background-image: url(../img/layered-waves-haikei.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: inherit; }
+  .container_aboutus .flex_cards_aboutus {
+    display: flex;
+    align-items: center; }
+    .container_aboutus .flex_cards_aboutus .card_aboutus {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container_aboutus .flex_cards_aboutus .card_aboutus p {
+        font-size: 2.2em; }
 
 .grid_gallery_aboutus {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding: 20px;
   gap: 2rem; }
+
+/*  Bootstrap Overwrite */
+.main_aboutus .d-flex {
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  gap: 2rem;
+  max-width: 1200px; }
 
 .flex_signin {
   display: flex;
