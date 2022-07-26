@@ -1,7 +1,6 @@
 /*  About Us  */
 
 .container_aboutus{
-    max-width: 1500px;
     margin: 0 auto;
     margin-top: 10rem;
 
@@ -17,7 +16,7 @@
         .title_aboutus{
             max-width: 100%;
         
-                h2{
+                h1{
                     font-size: map-get($text-size , text-xlg );
                     color: map-get($colors , text-color );
 
@@ -57,7 +56,7 @@
             padding: 20px;
             gap: 10px;
 
-                .h2{
+                .h1{
                     grid-row: 1 / 2;
                     grid-column: 1 / 2;
                 }
@@ -71,7 +70,7 @@
                 }
 
                 @media screen and (max-width: 470px) { 
-                    .h2{
+                    .h1{
                         grid-row: 1 / 2;
                         grid-column: 1 / 3;
                     }
@@ -116,13 +115,14 @@
                     flex-direction: column;
                     align-items: center;
                     width: 20%;
+                    gap: 20px;
 
                         p{
                             text-align: center;
                             font-size: 2vw;
                         }
                         img{
-                            max-width: 100%;
+                            max-width: 60%;
                                 &:hover{
                                     -webkit-transform: scale(1.2);
                                     transform: scale(1.2);
@@ -138,7 +138,7 @@
                             align-items: center;
                             width: 48%;
                                 img{
-                                    max-width: 60%;
+                                    max-width: 40%;
                                 }
                                 p{
                                     font-size: 15px;
@@ -152,7 +152,7 @@
                             align-items: center;
                             width: 45%;
                                 img{
-                                    max-width: 50%;
+                                    max-width: 30%;
                                 }
                                 p{
                                     font-size: 10px;
@@ -165,7 +165,7 @@
                             align-items: center;
                             width: 60%;
                                 img{
-                                    max-width: 50%;
+                                    max-width: 30%;
                                 }
                                 p{
                                     font-size: 14px;
