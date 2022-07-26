@@ -1,0 +1,148 @@
+.container_contact{
+    max-width: 1500px;
+    margin: 0 auto;
+
+        .section_flex_contact{
+           padding-top: 50vh;
+           margin-bottom: 50px;
+           display: flex;
+           flex-direction: column;
+
+            h2{
+                font-size: map-get($text-size , text-xlg);
+                color: map-get($colors , text-color);
+                text-align: center;
+                margin-bottom: 20px;
+                @media screen and (max-width: 500px) { 
+                    font-size: 80px;
+                }
+                @media screen and (max-width: 320px) { 
+                    font-size: 50px;
+                }
+            }
+
+            p{
+                font-size: map-get($text-size , text-lg);
+                color: map-get($colors , text-color);
+                text-align: center;
+                margin-bottom: 20px;
+                @media screen and (max-width: 500px) { 
+                    font-size: 24px;
+                }
+                @media screen and (max-width: 320px) { 
+                    font-size: 18px;
+                }
+            }
+
+            @media screen and (max-width: 960px) { 
+                padding-top: 40vh;
+            }
+
+
+        }
+}
+
+.background_contact{
+    background: url(../img/layered-waves-haikei_cabecera_contact.png);
+            height: 84vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            max-width: auto;
+            width: 100%;
+}
+
+.flex_contactus_form{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+
+    @media screen and (max-width: 670px) { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    .forma_contactus{
+        padding: map-get($spacings , spacing-md);
+        width: 50%;
+        background-color: #000000;
+        position: relative;
+        text-align: center;
+        -webkit-box-shadow: 0px 0 20px -2px white;
+        box-shadow: 0px 0 20px -2px #fffcfc;
+        border-radius: 30px;
+        @media screen and (max-width: 500px) { 
+             width: 70%;
+        }
+
+            .form_user_home{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin-bottom: 1rem;
+            
+                    .form-user{
+                        margin-bottom: 0.5rem;
+                        font-size: map-get($text-size , text-sm);
+                        color: map-get($colors , text-color);
+                    }
+            }
+            .form_email_home{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin-bottom: 1rem;
+        
+                    .form-email{
+                        margin-bottom: 0.5rem;
+                        font-size: map-get($text-size , text-sm);
+                        color: map-get($colors , text-color);
+                    }
+            }         
+            .form_phone_home{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin-bottom: 1rem;
+            
+                    .form-phone{
+                        margin-bottom: 0.5rem;
+                        font-size: map-get($text-size , text-sm);
+                        color: map-get($colors , text-color);
+                    }
+            }        
+            .bttn_form_enviar_home{
+                padding-right: 78%;
+
+                    .btn{
+                        width: auto;
+                        padding: 10px 12px;
+                        font-size: 12px;
+                        margin: 5px auto;
+                        border-radius: 10px;
+                    }
+        
+                    .btn--submit{
+                        @extend .btn;
+                        background-color: #ffffff;
+                        &:hover {
+                            -webkit-box-shadow: 0px 0 20px -2px rgb(255, 255, 255); 
+                            box-shadow: 0px 0 20px -2px rgb(255, 252, 252);
+                        }
+                    };
+            }
+        }            
+}
+
+
+/*  Bootstrap Overwrite  */
+
+.margin_top_contactus{
+    margin-top: 20px;
+}
